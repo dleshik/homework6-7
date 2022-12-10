@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+      const YearBirth = +prompt('Enter your year of birth');
+      var age; 
+
+    switch (YearBirth) {
+        case age = +null: {     
+        alert (`It is a pity that you did not indicate the year of birth :((`);
+        }
+        break;
+
+        case age = `+`: {     
+        alert (`It is a pity that you did not indicate the year of birth :((`);
+        }
+        break;
+
+        default:
+            age=(new Date().getFullYear() - +YearBirth);
+    }
+        
+    
+        const CityLive = prompt('Enter your city of residence'); 
+    
+        let city;
+
+        switch (CityLive) {
+            case city = null: {
+            alert (`It's a pity that you didn't indicate the place of residence :((`);
+                }
+            break;
+
+            case city = ``: {
+            alert (`It's a pity that you didn't indicate the place of residence :((`);
+                }
+                break;
+
+            case  city = `London`: {
+            alert ("You are" +age+ "years old / You live in the capital of UK");
+                }
+                break;
+
+            case city = `Kyiv`: {
+            alert  ("You are" +age+ "years old / You live in the capital of Ukraine");
+                }
+                break;
+
+            case city = `New York`: {
+            alert ("You are" +age+ "years old / You live in the capital of USA");
+                }
+                break;
+
+            default: {
+             alert  (`You are ${age} years old / You live in the city - ${CityLive}`);
+                }
+                break;
+        } 
+
+        const SportType= prompt('Your favorite sport');
+
+        let Sport;
+
+        switch (SportType) {
+            case Sport = null: {
+            alert (`It is a pity that you did not indicate your favorite sport :((`);
+                }
+                break;
+
+            case Sport = ``: {
+            alert (`It is a pity that you did not indicate your favorite sport :((`);
+                }
+                break;
+
+            case  Sport = `box`: {
+            alert ('Cool! Do you want to be Oleksandr Usyk');
+                }
+                break;
+
+            case Sport = `powerlifting`: {
+            alert  ('Cool! Do you want to be Vasyl Verastyuk');
+                }
+                break;
+
+            case Sport = `wrestler`: {
+            alert ('Cool! Do you want to be Zhan Beleniuk');
+                 }
+                break;
+
+            default: {
+             alert (`${SportType}- that's cool!`);
+                }
+                break;
+    }        
+           
+    </script>
+</body>
+</html>
